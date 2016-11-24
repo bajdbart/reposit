@@ -21,7 +21,7 @@ function CheckPassword(form) {
         for (var i=0; i<users.length; i++)
                 if (users[i][0]==user)
                         if (users[i][1]==pass) {
-                                form.action="tajna_strona.htm";
+                           sda     form.action="tajna_strona.htm";
                                 return true;
                         } else {
                                 alert("Sorki, " +user+ ", zle haslo.");
