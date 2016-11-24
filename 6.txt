@@ -1,0 +1,45 @@
+hzbdfgudsfgh<table width=510 border=0>
+<tr>
+<td width=305 align=left>
+
+<script language="JavaScript">
+<!--
+// please keep these lines on when you copy the source
+// made by: Nicolas - http://www.geocities.com/ResearchTriangle/1500
+
+function thetext(txt) {
+   document.theform.thetext.value = txt
+     return true;
+}
+
+// -->
+</script>
+<script language="JavaScript">
+<!--
+// please keep these lines on when you copy the source
+// made by: Nicolas - http://www.geocities.com/ResearchTriangle/1500
+
+function atext(txt) {
+   document.aform.atext.value = txt
+     return true;
+}
+
+// -->
+</script>
+<H3>Moje odsy³acze</H3>
+<a href="http://www.pckurier.pl" onmouseover='thetext("PCkurier - strona g³ówna"); atext("PCkurier zawiera opisy sprzêtu i oprogramowania, relacje z wydarzeñ, przegl¹dy technik i technologii.")' target=_top>PCkurier</a><br>
+<a href="http://www.pckurier.pl/html/index.htm" onmouseover='thetext("Kurs jêzyka HTML  - poradnik webmastera"); atext("Kurs zawiera praktyczny opis tworzenia stron WWW. Jest stale aktualizowany")' target=_top>Kurs jêzyka HTML</a><br>
+<a href="http://www.pckurier.pl/podreczniki/index.html" onmouseover='thetext("Poradniki i dokumentacje"); atext("Strona zawiera szereg poradników pomagaj¹cych w lepszym wykorzystaniu oprogramowania i serwisów us³ugowych w Internecie.")' target=_top>Poradniki dla internautów</a><br>
+<a href="http://www.pckurier.pl/wiedza/index.html" onmouseover='thetext("Katalog internetowy Wiedza"); atext("Katalog zawiera odsy³acze do miejsc zwi¹zanych z szeroko rozumian¹ wiedz¹ - encyklopedii, poradników, bibliotek, uczelni, ksiêgarni itd.")' target=_top>Wiedza</a><br>
+
+<form name="theform">
+<input type="text" name="thetext" size=40>
+</form>
+<form name="aform">
+<TEXTAREA rows=5 cols=30 wrap="virtual" NAME="atext">
+</TEXTAREA>
+</form>
+<center></center>
+</td>
+</tr>
+</table>

@@ -1,0 +1,50 @@
+xghfjdghasdfhdyh<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE="text/plain" onSubmit="(document.mailer.action += mailtoandsubject)"> 
+<TABLE BORDER=0>
+<TR VALIGN="top">
+<TD>Adresat:</TD>
+<TD><SELECT NAME="mailtoperson" onChange="msg(this.form)">
+<OPTION VALUE="">Wybierz adresata listu
+<OPTION VALUE="krzysztof.golachowski@pckurier.pl">Krzysztof Golachowski - redaktor (Sieci i Telekomunikacja)
+<OPTION VALUE="michal.setlak@pckurier.pl">Micha³ Setlak - redaktor (Sprzêt)
+<OPTION VALUE="pawel.wimmer@pckurier.pl">Pawe³ Wimmer - redaktor (Internet)
+</SELECT></TD>
+</TR>
+<TR VALIGN="top">
+<TD>Twoje imiê i nazwisko:</TD>
+<TD><INPUT TYPE="text" SIZE=45 NAME="name" onChange="msg(this.form)"></TD>
+</TR>
+<TR VALIGN="top">
+<TD>Twój E-mail:</TD>
+<TD><INPUT TYPE="text" SIZE=45 NAME="email" onChange="msg(this.form)"></TD>
+</TR>
+<TR VALIGN="top">
+<TD>Priorytet:</TD>
+<TD>
+<SELECT NAME="priority" onChange="msg(this.form)">
+<OPTION VALUE="Normal">Normalny
+<OPTION VALUE="Urgent">Pilne
+<OPTION VALUE="No Reply Needed">OdpowiedŸ nie jest konieczna
+</SELECT></TD>
+</TR>
+<TR VALIGN="top">
+<TD>Temat listu:</TD>
+<TD><INPUT TYPE="text" SIZE=45 NAME="subject" onChange="msg(this.form)"></TD>
+</TR>
+<TR VALIGN="top">
+<TD>Treœæ listu:</TD>
+<TD><TEXTAREA NAME="message" COLS=45 ROWS=7 WRAP="virtual" OnChange="msg(this.form)"></TEXTAREA></TD>
+</TR>
+<TR>
+<TD> </TD>
+<TD><INPUT TYPE="submit" VALUE="Wyœlij list">
+<INPUT TYPE="reset" VALUE="Usuñ informacje"></TD>
+</TR>
+</TABLE>
+</FORM>
+
+<SCRIPT LANGUAGE="JavaScript">
+function msg() {
+document.mailer.action = "mailto:" 
+mailtoandsubject = ((document.mailer.mailtoperson.options[document.mailer.mailtoperson.selectedIndex].value) + '?subject=' + document.mailer.subject.value); 
+} 
+</SCRIPT> 

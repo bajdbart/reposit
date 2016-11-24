@@ -1,0 +1,31 @@
+;sbhjh m,bnhg<SCRIPT language="JavaScript">
+  // This script is made by Marnix Birza at 13-11-1996.
+  var scrtxt="Czeœæ....   Witajcie na mojej stronie....*"+
+             "To jest drugi wiersz komunikatu*"+
+             "To jest trzeci wiersz komunikatu*"+
+             "To jest czwarty wiersz komunikatu#";
+
+  var startpos=0;
+  var endpos=1;
+
+ function scroll() {
+  var scroller="";
+  scroller=scrtxt.substring(startpos,endpos);
+  document.sform.stxt.value = scroller;
+  endpos++;
+  if (scrtxt.substring(endpos-1,endpos)=='#')
+   {startpos=0; endpos=1; setTimeout("scroll()",2500); }
+   else
+     if (scrtxt.substring(endpos-1,endpos)=='*')
+       {startpos=endpos; endpos++; setTimeout("scroll()",2500);}
+       else {setTimeout("scroll()",10);}
+  }
+</SCRIPT>
+W ramach BODY
+
+<FORM name="sform">
+<INPUT name="stxt" type="TEXT" size="45" value="AARRGHHH....no javascript....">
+</FORM>
+W BODY musimy te¿ podaæ
+
+<body onload="scroll()">

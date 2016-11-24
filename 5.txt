@@ -1,0 +1,49 @@
+fskgjbhdgfkughgudhrfgksrkyu<!-- This script came from the public archives of JavaScript Planet at http://www.js-planet.com --> 
+<!-- For more scripts, tutorials, links, discussion forums, help, or anything else JavaScript, --> 
+<!-- Please visit JavaScript Planet at http://www.js-planet.com. Please keep this header intact. --> 
+
+<script language="javascript">
+
+function displayinfo(){
+        var who=document.emails.list.options[document.emails.list.selectedIndex].value;
+        var address=document.emails.address;
+        var info=document.emails.information;
+        var ss="@yourdomain.com";
+if (who=="nameoflist"){
+                address.value="";
+                info.value="";}
+
+if (who=="webmaster"){
+                address.value="webmaster"+ss;
+                info.value="Send email with problems and questions about this web site to this address.";}
+if (who=="bteditor"){
+                address.value="barrington"+ss;
+                info.value="Send email about the editorial content of the Barrington Times to this address.";}
+if (who=="bpeditor"){
+                address.value="bristol"+ss;
+                info.value="Send email about the editorial content of the Bristol Phoenix to this address.";}
+}
+
+</script>
+<FORM name="emails">
+<br>
+<p><B>Ksi¹¿ka adresowa naszej firmy</B></p>
+<BR>
+<SELECT NAME="list" onChange="displayinfo()">
+<OPTION value="nameoflist">Wybierz adres z listy
+<OPTION value="webmaster">Webmaster
+<OPTION value="bteditor">Barrington Times Editor
+<OPTION value="bpeditor">Bristol Phoenix Editor
+</SELECT>
+<TABLE BORDER WIDTH=300 BGCOLOR="#C0C0C0">
+<TR>
+<TD VALIGN=TOP>
+<CENTER>
+<INPUT TYPE="text" NAME="address" VALUE="" SIZE=45><BR>
+<TEXTAREA NAME="information" ROWS=7 COLS=27 wrap=virtual></TEXTAREA><BR>
+<INPUT TYPE="button" NAME="sendit" VALUE="Kliknij, aby wys³aæ pocztê" onClick="parent.location='mailto:'+document.emails.address.value">
+</CENTER>
+</TD>
+</TR>
+</TABLE>
+</FORM>

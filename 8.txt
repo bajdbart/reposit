@@ -1,0 +1,67 @@
+adfbgkjhdygfku<!--script made by Andrzej Iwanek andyiv@kki.net.pl http:/kki.net.pl/~andyiv/-->
+<script language=JavaScript>
+<!--
+function AppInit(){
+bannersInit()
+newBanner()
+}
+
+function RandomB(range){
+	today = new Date();
+	num = today.getTime();
+	num = Math.abs(Math.round(Math.sin(num*3)*38111) % range)
+	return(num)
+}
+
+function bannersInit(){
+numBan=4
+bann=new Array(numBan)
+for (i=0;i<numBan;i++)
+bann[i]="Div"+i
+banOld=bann[0]
+banNew=bann[RandomB(4)]
+}
+
+function newBanner(){
+if(banOld==banNew)
+banNew=bann[(RandomB(4)+1) % 4]
+showNew()
+banChange()
+setTimeout("newBanner()",6*RandomB(1500)+3000)
+}
+
+function banChange(){
+banOld=banNew
+banNew=bann[RandomB(4)]
+}
+
+function showNew(){
+	if(document.all) {
+		document.all[banOld].style.visibility="hidden";
+		document.all[banNew].style.visibility="visible";
+	}
+	if (document.layers){
+		document.layers[banOld].visibility="hide";
+		document.layers[banNew].visibility="show";
+	}
+}
+window.onload=AppInit
+//-->
+</script>
+W ramach HEAD - style
+<STYLE TYPE="text/css">
+<!--
+trzeba pamiêtaæ o podaniu wysokoœci, szerokoœci i clipa bannera, ¿eby wyœwietla³ siê ca³y
+	#Div0 {position:absolute; left:150; top:130; width:53; height:50;
+	clip:rect(0,53,50,0); visibility:hidden; layer-visibility:hide}
+w tym przypadku banner mia³by szerokoœæ 53 piksele, wysokoœæ 50 pikseli.
+	#Div1 {position:....
+-->
+</STYLE>
+W ramach body nale¿y zadeklarowaæ DIV-y wraz z url-em linków i url-em bannera 
+<div id="Div0"><a href="url strony do której kieruje banner">
+<img SRC="url do grafiki bannera"  alt="Wyœwietlany tekst bannera - mo¿na pomin¹æ" border=0></a></div>
+<div id="Div1"><img SRC="....
+i tak dla ka¿dego bannera.
+
+

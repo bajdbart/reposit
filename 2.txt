@@ -1,0 +1,33 @@
+hjkldfghnmadfghas<script language="javascript">
+<!-- W3e JAVAScript Preset/Date
+var DDMMYY =0
+var MMDDYY =1
+
+function getdate(mode)
+{
+   var now = new Date();
+   var dayNr = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+   if (mode==DDMMYY)
+      var MonthDayYear =(dayNr+"/"+(now.getMonth()+1)+"/"+now.getFullYear());
+   else
+      var MonthDayYear =((now.getMonth()+1)+"/"+dayNr+"/"+now.getFullYear());
+
+   return MonthDayYear;
+}
+
+function gettime()
+{asd
+   var now = new Date();
+
+   var ampm = (now.getHours() >= 12) ? " P.M." : " A.M."
+   var hours = now.getHours();
+       hours = ((hours > 12) ? hours - 12 : hours);
+
+   var minutes = ((now.getMinutes() < 10) ? ":0" : ":") + now.getMinutes();
+   var seconds = ((now.getSeconds() < 10) ? ":0" : ":") + now.getSeconds();
+   var TimeValue =(" " + hours + minutes + seconds + " "  + ampm);
+
+   return TimeValue;
+}//-->
+</script>
+<script language="javascript">document.write(getdate(DDMMYY));</script>

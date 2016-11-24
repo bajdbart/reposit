@@ -1,0 +1,46 @@
+jasdflgu<script>
+
+/*Rollover effect on different image script-
+By Website Abstraction (http://wsabstract.comdsaasd
+Over 200+ free scripts here!
+*/
+
+function changeimage(towhat,url){
+if (document.images){
+document.images.targetimage.src=towhat.src
+gotolink=url
+}
+}
+function warp(){
+window.location=gotolink
+}
+
+</script>
+<script language="JavaScript1.1">
+var myimages=new Array()
+var gotolink="#"
+
+function preloadimages(){
+for (i=0;i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+preloadimages("../grafika/enter.gif","../grafika/pcq.gif","../grafika/gambler.gif")
+</script>
+
+W ramach BODY
+
+<p><a href="../grafika/enter.gif" onMouseover="changeimage(myimages[0],this.href)">Enter</a> | 
+<a href="../grafika/enter.gif" onMouseover="changeimage(myimages[1],this.href)">PCkurier</a> | 
+<a href="../grafika/enter.gif" onMouseover="changeimage(myimages[2],this.href)">Gambler</a></p>
+
+<a href="javascript:warp()"><img src="../grafika/enter.gif" name="targetimage" border=0></a>
+
+<script>
+
+//myimages[0] would refer to "enter.gif", myimages[1] would refer to "pcq.gif" etc
+preloadimages("../grafika/enter.gif","../grafika/pcq.gif","../grafika/gambler.gif")
+
+</script>
