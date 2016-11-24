@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 xghfjdghasdfhdyh<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE="text/plain" onSu213bmit="(document.mailer.action += mailtoandsubject)"> 3524234
 =======
 yghfjdghasdfhdyh<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE="text/plain" onSubmit="(document.mailer.action += mailtoandsubject)"> 
