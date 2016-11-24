@@ -1,4 +1,4 @@
-xghfjdghasdfhdyh<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE="text/plain" onSubmit="(document.mailer.action += mailtoandsubject)"> 
+yghfjdghasdfhdyh<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE="text/plain" onSubmit="(document.mailer.action += mailtoandsubject)"> 
 <TABLE BORDER=0>
 <TR VALIGN="top">
 <TD>Adresat:</TD>
